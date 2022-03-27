@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+//import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import 'bootstrap/dist/css/bootstrap.css';
+import App from './components/App';
+import configureStore from './store/configureStore'
+//import * as serviceWorker from './service/Worker';
 import reportWebVitals from './reportWebVitals';
 
+const store = configureStore()
+
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={configureStore()}>
     <App />
-  </React.StrictMode>,
+ </Provider>,
   document.getElementById('root')
 );
 
