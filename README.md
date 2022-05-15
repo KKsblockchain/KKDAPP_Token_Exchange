@@ -1,1 +1,1 @@
-You can see this app "live" here: https://kkdapptokenexchange.herokuapp.com/
+You can see this app "live" on the Kovan test network here: https://kkdapptokenexchange.herokuapp.com/
